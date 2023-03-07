@@ -10,9 +10,9 @@ void main() {
       debugShowCheckedModeBanner: false,
       routes: {
         '/': (context) => Home_Screen(),
-        '2': (context) => Chat(),
-        '1': (context) => Call(),
-        '3': (context) => Setting(),
+        'jenil': (context) => Chat(),
+        'deep': (context) => Call(),
+        'smit': (context) => Setting(),
       },
     ),
   );

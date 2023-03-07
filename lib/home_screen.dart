@@ -23,14 +23,15 @@ class _Home_ScreenState extends State<Home_Screen> {
               "App",
               style: TextStyle(fontSize: 30, color: Colors.white),
             ),
-            backgroundColor: Colors.green.shade700,
+            backgroundColor: Colors.black,
             // bottom:
           ),
           body: TabBarView(
             children: [
               Call(),
-              Chat(),
               Setting(),
+              Chat(),
+
             ],
           ),
           bottomNavigationBar: TabBar(
@@ -39,17 +40,18 @@ class _Home_ScreenState extends State<Home_Screen> {
             labelColor: Colors.black,
             tabs: [
               Tab(
-                icon: Icon(Icons.call),
+                icon: Icon(Icons.call,color: Colors.black,),
                 text: "Call",
               ),
               Tab(
-                icon: Icon(Icons.chat),
-                text: "Chats",
+                text: "Settings",
+                icon: Icon(Icons.settings,color: Colors.black,),
               ),
               Tab(
-                icon: Icon(Icons.settings),
-                text: "Settings",
+                icon: Icon(Icons.chat,color: Colors.black,),
+                text: "Chats",
               ),
+
             ],
           ),
         ),

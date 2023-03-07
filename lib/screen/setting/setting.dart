@@ -8,7 +8,6 @@ class Setting extends StatefulWidget {
 }
 
 class _SettingState extends State<Setting> {
-  Color c1 = Color(0xff8F8F8F);
 
   @override
   Widget build(BuildContext context) {
@@ -19,47 +18,15 @@ class _SettingState extends State<Setting> {
           child: SingleChildScrollView(
             child: Column(
               children: [
-
-                Center(
-                    child: Padding(
-                      padding: const EdgeInsets.all(10),
-                      child: Text(
-                        "Settings",
-                        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                      ),
-                    )),
-                Container(
-                  height: 50,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                      color: Color(0xffD7D7D7),
-                      borderRadius: BorderRadius.circular(10)),
-                  child: Row(
-                    children: [
-                      Padding(padding: EdgeInsets.all(5)),
-                      Icon(
-                        Icons.search,
-                        size: 28,
-                        color: c1,
-                      ),
-                      SizedBox(
-                        width: 20,
-                      ),
-                      Center(
-                        child: Text(
-                          "Search settings",
-                          style: TextStyle(color: c1),
-                        ),
-                      )
-                    ],
-                  ),
-                ),
                 Divider(
-                  color: Color(0xff8F8F8F),
-                  thickness: 0.3,
+                  color: Colors.black26,
+                  thickness: 5,
+                ),
+                SizedBox(
+                  height: 10,
                 ),
                 Container(
-                  height: 40,
+                  height: 60,
                   width: double.infinity,
                   child: Row(
                     children: [
@@ -84,24 +51,30 @@ class _SettingState extends State<Setting> {
                       ),
                       Text(
                         "MIUI 10 Global 9.2.28",
-                        style: TextStyle(color: Color(0xff8F8F8F)),
+                        style: TextStyle(color: Colors.black),
                       ),
                       SizedBox(
                         width: 20,
                       ),
                       Icon(
                         Icons.arrow_forward_ios,
-                        color: Color(0xff8F8F8F),
+                        color: Colors.black,
                       )
                     ],
                   ),
                 ),
+                SizedBox(
+                  height: 10,
+                ),
                 Divider(
-                  color: Color(0xff8F8F8F),
-                  thickness: 0.3,
+                  color: Colors.black26,
+                  thickness: 5,
+                ),
+                SizedBox(
+                  height: 10,
                 ),
                 Container(
-                  height: 40,
+                  height: 60,
                   width: double.infinity,
                   child: Row(
                     children: [
@@ -126,32 +99,68 @@ class _SettingState extends State<Setting> {
                       ),
                       Icon(
                         Icons.arrow_forward_ios,
-                        color: Color(0xff8F8F8F),
+                        color: Colors.black,
                       )
                     ],
                   ),
                 ),
                 Divider(
-                  color: Colors.grey.shade200,
-                  thickness: 10,
+                  color: Colors.black26,
+                  thickness: 5,
                 ),
-                Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Text(
-                        "WIRELESS & NETWORKS",
-                        style: TextStyle(color: c1),
-                      ),
-                    )
-                  ],
-                ),
-                Divider(
-                  color: Color(0xff8F8F8F),
-                  thickness: 0.3,
+                SizedBox(
+                  height: 10,
                 ),
                 Container(
-                  height: 40,
+                  height: 60,
+                  width: double.infinity,
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(5),
+                        child: Icon(
+                          Icons.wifi,
+                          color: Colors.black,
+                        ),
+                      ),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Text(
+                        "WiFi",
+                        style: TextStyle(fontSize: 18),
+                      ),
+                      Expanded(
+                        child: SizedBox(
+                          width: 120,
+                        ),
+                      ),
+                      Text(
+                        "off",
+                        style: TextStyle(color: Colors.black),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Icon(
+                        Icons.arrow_forward_ios,
+                        color: Colors.black,
+                      )
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Divider(
+                  color: Colors.black26,
+                  thickness: 5,
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Container(
+                  height: 60,
                   width: double.infinity,
                   child: Row(
                     children: [
@@ -176,101 +185,23 @@ class _SettingState extends State<Setting> {
                       ),
                       Icon(
                         Icons.arrow_forward_ios,
-                        color: Color(0xff8F8F8F),
+                        color: Colors.black,
                       )
                     ],
                   ),
                 ),
-                Divider(
-                  color: Color(0xff8F8F8F),
-                  thickness: 0.3,
-                ),
-                Container(
-                  height: 40,
-                  width: double.infinity,
-                  child: Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(5),
-                        child: Icon(
-                          Icons.wifi,
-                          color: Colors.lightBlueAccent.shade100,
-                        ),
-                      ),
-                      SizedBox(
-                        width: 20,
-                      ),
-                      Text(
-                        "WiFi",
-                        style: TextStyle(fontSize: 18),
-                      ),
-                      Expanded(
-                        child: SizedBox(
-                          width: 120,
-                        ),
-                      ),
-                      Text(
-                        "off",
-                        style: TextStyle(color: c1),
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Icon(
-                        Icons.arrow_forward_ios,
-                        color: Color(0xff8F8F8F),
-                      )
-                    ],
-                  ),
+                SizedBox(
+                  height: 10,
                 ),
                 Divider(
-                  color: Color(0xff8F8F8F),
-                  thickness: 0.3,
+                  color: Colors.black26,
+                  thickness: 5,
+                ),
+                SizedBox(
+                  height: 10,
                 ),
                 Container(
-                  height: 40,
-                  width: double.infinity,
-                  child: Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(5),
-                        child: Icon(
-                          Icons.bluetooth,
-                          color: Colors.deepPurpleAccent.shade100,
-                        ),
-                      ),
-                      SizedBox(
-                        width: 20,
-                      ),
-                      Text(
-                        "Bluetooth",
-                        style: TextStyle(fontSize: 18),
-                      ),
-                      Expanded(
-                        child: SizedBox(
-                          width: 120,
-                        ),
-                      ),
-                      Text(
-                        "off",
-                        style: TextStyle(color: c1),
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Icon(
-                        Icons.arrow_forward_ios,
-                        color: Color(0xff8F8F8F),
-                      )
-                    ],
-                  ),
-                ),
-                Divider(
-                  color: Color(0xff8F8F8F),
-                  thickness: 0.3,
-                ),
-                Container(
-                  height: 40,
+                  height: 60,
                   width: double.infinity,
                   child: Row(
                     children: [
@@ -295,24 +226,30 @@ class _SettingState extends State<Setting> {
                       ),
                       Text(
                         "off",
-                        style: TextStyle(color: c1),
+                        style: TextStyle(color: Colors.black),
                       ),
                       SizedBox(
                         width: 10,
                       ),
                       Icon(
                         Icons.arrow_forward_ios,
-                        color: Color(0xff8F8F8F),
+                        color: Colors.black,
                       )
                     ],
                   ),
                 ),
+                SizedBox(
+                  height: 10,
+                ),
                 Divider(
-                  color: Color(0xff8F8F8F),
-                  thickness: 0.3,
+                  color: Colors.black26,
+                  thickness: 5,
+                ),
+                SizedBox(
+                  height: 10,
                 ),
                 Container(
-                  height: 40,
+                  height: 60,
                   width: double.infinity,
                   child: Row(
                     children: [
@@ -337,24 +274,30 @@ class _SettingState extends State<Setting> {
                       ),
                       Text(
                         "off",
-                        style: TextStyle(color: c1),
+                        style: TextStyle(color: Colors.black),
                       ),
                       SizedBox(
                         width: 10,
                       ),
                       Icon(
                         Icons.arrow_forward_ios,
-                        color: Color(0xff8F8F8F),
+                        color: Colors.black,
                       )
                     ],
                   ),
                 ),
+                SizedBox(
+                  height: 10,
+                ),
                 Divider(
-                  color: Color(0xff8F8F8F),
-                  thickness: 0.3,
+                  color: Colors.black26,
+                  thickness: 5,
+                ),
+                SizedBox(
+                  height: 10,
                 ),
                 Container(
-                  height: 40,
+                  height: 60,
                   width: double.infinity,
                   child: Row(
                     children: [
@@ -379,24 +322,30 @@ class _SettingState extends State<Setting> {
                       ),
                       Text(
                         "off",
-                        style: TextStyle(color: c1),
+                        style: TextStyle(color:Colors.black),
                       ),
                       SizedBox(
                         width: 10,
                       ),
                       Icon(
                         Icons.arrow_forward_ios,
-                        color: Color(0xff8F8F8F),
+                        color: Colors.black,
                       )
                     ],
                   ),
                 ),
+                SizedBox(
+                  height: 10,
+                ),
                 Divider(
-                  color: Color(0xff8F8F8F),
-                  thickness: 0.3,
+                  color: Colors.black26,
+                  thickness: 5,
+                ),
+                SizedBox(
+                  height: 10,
                 ),
                 Container(
-                  height: 40,
+                  height: 60,
                   width: double.infinity,
                   child: Row(
                     children: [
@@ -421,25 +370,20 @@ class _SettingState extends State<Setting> {
                       ),
                       Icon(
                         Icons.arrow_forward_ios,
-                        color: Color(0xff8F8F8F),
+                        color: Colors.black,
                       )
                     ],
                   ),
                 ),
-                Divider(
-                  color: Colors.grey.shade200,
-                  thickness: 10,
+                SizedBox(
+                  height: 10,
                 ),
-                Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Text(
-                        "PERSONAL",
-                        style: TextStyle(color: c1),
-                      ),
-                    )
-                  ],
+                Divider(
+                  color: Colors.black26  ,
+                  thickness: 5,
+                ),
+                SizedBox(
+                  height: 10,
                 ),
               ],
             ),
